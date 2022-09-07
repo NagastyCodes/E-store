@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Shopping Cart</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.store.js"></script>
+
+</head>
+
+<body>
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+  		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="topnav">
+			<a style="color:black;" class="active" href="index.html">Home</a>
+		  </div> 
+			<div class="collapse navbar-collapse" id="navbarNav">
+			
+			  <ul class="navbar-nav ml-auto">
+			   
+			   <li class="nav-item">
+				  <a style="color:black;" class="nav-link" href="#On Sales">Products</a>
+				</li>
+				<li class="nav-item">
+				  <a style="color:black;" class="nav-link" href="#masthread">Login</a>
+			  
+				</li>
+				
+				
+				<li class="nav-item">
+				  <a style="color:black;" class="nav-link" href="index.html">About Us</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a style="color:black;" class="nav-link" href="index.html">Our Services</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a style="color:black;" class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Our Team</a>
+				</li>
+				<li class="nav-item">
+				  <a style="color:black;" class="nav-link" href="index.html">Contact</a>
+				</li>
+				
+				
+			  </ul>
+			</div>
+		  </nav>
+	</section>
+
+<div id="site">
+	<header id="masthead">
+		<h1></h1>
+	</header>
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Quantity</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="index.html" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+</body>
+</html>	
